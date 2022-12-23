@@ -1,0 +1,53 @@
+<h1 mat-dialog-title>Add Product from here</h1>
+
+<div mat-dialog-content>
+ <form [formGroup]="productForm">
+  <mat-form-field appearance="outline">
+    <mat-label>Product Name</mat-label>
+    <input formControlName="productName" matInput placeholder="">
+    <mat-icon matPrefix>work_outline</mat-icon>
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Product Category</mat-label>
+    <mat-select  formControlName="category" placeholder="">
+      <mat-option value="Fruits">Fruits</mat-option>
+      <mat-option value="Vegetables">Vegetables</mat-option>
+      <mat-option value="Elsectronics">Elsectronics</mat-option>
+    </mat-select>
+    <mat-icon matPrefix>category</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a date</mat-label>
+    <input formControlName="date" matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matPrefix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <label for="" ><h1>Product Freshness</h1></label>
+  <mat-radio-group formControlName="freshness"
+  class="example-radio-group">
+    <mat-radio-button class="example-radio-button"  *ngFor="let fresh of freshnessList" [value]="fresh">
+        {{fresh}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input formControlName="price" matInput type="number" placeholder="" />
+    <mat-icon matPrefix>attach_money</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-icon matPrefix>comment</mat-icon>
+    <mat-label>Comment</mat-label>
+    <textarea formControlName="comment" matInput></textarea>
+  </mat-form-field>
+ </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+
+</div>
