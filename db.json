@@ -1,31 +1,22 @@
 {
   "productList": [
     {
-      "productName": "a",
+      "productName": "camera",
       "category": "Elsectronics",
-      "freshness": "Refurbished",
-      "price": 12,
-      "comment": "12",
-      "date": "2022-12-06T18:30:00.000Z",
-      "id": 3
+      "freshness": "Brand New",
+      "price": 10000,
+      "comment": "Sony",
+      "date": "2022-12-03T18:30:00.000Z",
+      "id": 1
     },
     {
-      "productName": "dkofv",
+      "productName": "Mango",
       "category": "Fruits",
       "freshness": "Refurbished",
-      "price": 123,
-      "comment": "123",
-      "date": "2022-12-04T18:30:00.000Z",
-      "id": 4
-    },
-    {
-      "productName": "potato",
-      "category": "Vegetables",
-      "freshness": "Refurbished",
-      "price": 23,
-      "comment": "dsf",
-      "date": "2002-02-05T18:30:00.000Z",
-      "id": 5
+      "price": 2900,
+      "comment": "packed",
+      "date": "2022-12-10T18:30:00.000Z",
+      "id": 2
     }
   ],
   "comments": [
