@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "camera",
+      "category": "Elsectronics",
+      "freshness": "Brand New",
+      "price": 10000,
+      "comment": "Sony",
+      "date": "2022-12-03T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "MangO",
+      "category": "Fruits",
+      "freshness": "Refurbished",
+      "price": 2900,
+      "comment": "packed",
+      "date": "2022-12-10T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
